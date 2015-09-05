@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Parse.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -16,6 +26,27 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>04897858719C31FFEDEF166D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88630A34DF6220FDC46447E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC4F5B52CF9BB66CAD0DE3F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6A147C894BF8DC0A4CB5193</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

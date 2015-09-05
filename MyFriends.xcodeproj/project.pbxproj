@@ -10,11 +10,13 @@
 		8623BFA81B9B8E7B00859EE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFA71B9B8E7B00859EE6 /* main.m */; };
 		8623BFAB1B9B8E7B00859EE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFAA1B9B8E7B00859EE6 /* AppDelegate.m */; };
 		8623BFAE1B9B8E7B00859EE6 /* MyFriends.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFAC1B9B8E7B00859EE6 /* MyFriends.xcdatamodeld */; };
-		8623BFB11B9B8E7B00859EE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFB01B9B8E7B00859EE6 /* ViewController.m */; };
 		8623BFB41B9B8E7B00859EE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8623BFB21B9B8E7B00859EE6 /* Main.storyboard */; };
 		8623BFB61B9B8E7B00859EE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8623BFB51B9B8E7B00859EE6 /* Images.xcassets */; };
 		8623BFB91B9B8E7B00859EE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8623BFB71B9B8E7B00859EE6 /* LaunchScreen.xib */; };
 		8623BFC51B9B8E7B00859EE6 /* MyFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFC41B9B8E7B00859EE6 /* MyFriendsTests.m */; };
+		86E50CEE1B9BA0600064B38D /* MFAFriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CED1B9BA0600064B38D /* MFAFriendsListViewController.m */; };
+		86E50CF11B9BA0750064B38D /* MFAFriendsAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CF01B9BA0750064B38D /* MFAFriendsAddViewController.m */; };
+		86E50CF71B9BA6B50064B38D /* MFAFriendsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CF61B9BA6B50064B38D /* MFAFriendsDetailViewController.m */; };
 		9CD2994B04350A1BFCE3CE24 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9745E293C05E67DBB3FA392D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,14 +38,18 @@
 		8623BFA91B9B8E7B00859EE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8623BFAA1B9B8E7B00859EE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8623BFAD1B9B8E7B00859EE6 /* MyFriends.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFriends.xcdatamodel; sourceTree = "<group>"; };
-		8623BFAF1B9B8E7B00859EE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8623BFB01B9B8E7B00859EE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8623BFB31B9B8E7B00859EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8623BFB51B9B8E7B00859EE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8623BFB81B9B8E7B00859EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8623BFBE1B9B8E7B00859EE6 /* MyFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8623BFC31B9B8E7B00859EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8623BFC41B9B8E7B00859EE6 /* MyFriendsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFriendsTests.m; sourceTree = "<group>"; };
+		86E50CEC1B9BA0600064B38D /* MFAFriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAFriendsListViewController.h; sourceTree = "<group>"; };
+		86E50CED1B9BA0600064B38D /* MFAFriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsListViewController.m; sourceTree = "<group>"; };
+		86E50CEF1B9BA0750064B38D /* MFAFriendsAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAFriendsAddViewController.h; sourceTree = "<group>"; };
+		86E50CF01B9BA0750064B38D /* MFAFriendsAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsAddViewController.m; sourceTree = "<group>"; };
+		86E50CF51B9BA6B50064B38D /* MFAFriendsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAFriendsDetailViewController.h; sourceTree = "<group>"; };
+		86E50CF61B9BA6B50064B38D /* MFAFriendsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsDetailViewController.m; sourceTree = "<group>"; };
 		9745E293C05E67DBB3FA392D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0DE30175910C894A1E219D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,10 +113,9 @@
 		8623BFA41B9B8E7B00859EE6 /* MyFriends */ = {
 			isa = PBXGroup;
 			children = (
+				86E50CE51B9B9F070064B38D /* ViewController */,
 				8623BFA91B9B8E7B00859EE6 /* AppDelegate.h */,
 				8623BFAA1B9B8E7B00859EE6 /* AppDelegate.m */,
-				8623BFAF1B9B8E7B00859EE6 /* ViewController.h */,
-				8623BFB01B9B8E7B00859EE6 /* ViewController.m */,
 				8623BFB21B9B8E7B00859EE6 /* Main.storyboard */,
 				8623BFB51B9B8E7B00859EE6 /* Images.xcassets */,
 				8623BFB71B9B8E7B00859EE6 /* LaunchScreen.xib */,
@@ -144,6 +149,19 @@
 				8623BFC31B9B8E7B00859EE6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86E50CE51B9B9F070064B38D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86E50CF51B9BA6B50064B38D /* MFAFriendsDetailViewController.h */,
+				86E50CF61B9BA6B50064B38D /* MFAFriendsDetailViewController.m */,
+				86E50CEC1B9BA0600064B38D /* MFAFriendsListViewController.h */,
+				86E50CED1B9BA0600064B38D /* MFAFriendsListViewController.m */,
+				86E50CEF1B9BA0750064B38D /* MFAFriendsAddViewController.h */,
+				86E50CF01B9BA0750064B38D /* MFAFriendsAddViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,10 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E50CF71B9BA6B50064B38D /* MFAFriendsDetailViewController.m in Sources */,
 				8623BFAB1B9B8E7B00859EE6 /* AppDelegate.m in Sources */,
 				8623BFA81B9B8E7B00859EE6 /* main.m in Sources */,
-				8623BFB11B9B8E7B00859EE6 /* ViewController.m in Sources */,
+				86E50CF11B9BA0750064B38D /* MFAFriendsAddViewController.m in Sources */,
 				8623BFAE1B9B8E7B00859EE6 /* MyFriends.xcdatamodeld in Sources */,
+				86E50CEE1B9BA0600064B38D /* MFAFriendsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
