@@ -16,7 +16,7 @@
 		8623BFC51B9B8E7B00859EE6 /* MyFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFC41B9B8E7B00859EE6 /* MyFriendsTests.m */; };
 		86E50CEE1B9BA0600064B38D /* MFAFriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CED1B9BA0600064B38D /* MFAFriendsListViewController.m */; };
 		86E50CF11B9BA0750064B38D /* MFAFriendsAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CF01B9BA0750064B38D /* MFAFriendsAddViewController.m */; };
-		86E50CF71B9BA6B50064B38D /* MFAFriendsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CF61B9BA6B50064B38D /* MFAFriendsDetailViewController.m */; };
+		86E50CFA1B9BA9C50064B38D /* MFAFriendsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CF91B9BA9C50064B38D /* MFAFriendsDetailViewController.m */; };
 		9CD2994B04350A1BFCE3CE24 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9745E293C05E67DBB3FA392D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +48,8 @@
 		86E50CED1B9BA0600064B38D /* MFAFriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsListViewController.m; sourceTree = "<group>"; };
 		86E50CEF1B9BA0750064B38D /* MFAFriendsAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAFriendsAddViewController.h; sourceTree = "<group>"; };
 		86E50CF01B9BA0750064B38D /* MFAFriendsAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsAddViewController.m; sourceTree = "<group>"; };
-		86E50CF51B9BA6B50064B38D /* MFAFriendsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAFriendsDetailViewController.h; sourceTree = "<group>"; };
-		86E50CF61B9BA6B50064B38D /* MFAFriendsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsDetailViewController.m; sourceTree = "<group>"; };
+		86E50CF81B9BA9C50064B38D /* MFAFriendsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAFriendsDetailViewController.h; sourceTree = "<group>"; };
+		86E50CF91B9BA9C50064B38D /* MFAFriendsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsDetailViewController.m; sourceTree = "<group>"; };
 		9745E293C05E67DBB3FA392D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0DE30175910C894A1E219D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,8 +154,8 @@
 		86E50CE51B9B9F070064B38D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				86E50CF51B9BA6B50064B38D /* MFAFriendsDetailViewController.h */,
-				86E50CF61B9BA6B50064B38D /* MFAFriendsDetailViewController.m */,
+				86E50CF81B9BA9C50064B38D /* MFAFriendsDetailViewController.h */,
+				86E50CF91B9BA9C50064B38D /* MFAFriendsDetailViewController.m */,
 				86E50CEC1B9BA0600064B38D /* MFAFriendsListViewController.h */,
 				86E50CED1B9BA0600064B38D /* MFAFriendsListViewController.m */,
 				86E50CEF1B9BA0750064B38D /* MFAFriendsAddViewController.h */,
@@ -299,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86E50CF71B9BA6B50064B38D /* MFAFriendsDetailViewController.m in Sources */,
+				86E50CFA1B9BA9C50064B38D /* MFAFriendsDetailViewController.m in Sources */,
 				8623BFAB1B9B8E7B00859EE6 /* AppDelegate.m in Sources */,
 				8623BFA81B9B8E7B00859EE6 /* main.m in Sources */,
 				86E50CF11B9BA0750064B38D /* MFAFriendsAddViewController.m in Sources */,
