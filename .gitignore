@@ -1,10 +1,10 @@
+# Created by http://www.gitignore.io
+
+### Objective-C ###
+# OS X
+.DS_Store
+
 # Xcode
-#CocoaPods
-Pods
-
-# Created by https://www.gitignore.io
-
-### Xcode ###
 build/
 *.pbxuser
 !default.pbxuser
@@ -16,6 +16,18 @@ build/
 !default.perspectivev3
 xcuserdata
 *.xccheckout
+profile
 *.moved-aside
 DerivedData
-*.xcuserstate
+*.hmap
+*.ipa
+
+# CocoaPods
+Pods
+
+
+### Xcode ###
+build
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
