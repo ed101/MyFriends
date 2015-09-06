@@ -11,3 +11,6 @@
 extern NSString * const MFAParseApplicationId;
 extern NSString * const MFAParseRESTAPIKey;
 extern NSString * const MFAParseClientKey;
+
+extern NSString * const toFriendsAddVC;
+extern NSString * const toFriendsDetailVC;

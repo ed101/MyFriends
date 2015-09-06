@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8623BFA81B9B8E7B00859EE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFA71B9B8E7B00859EE6 /* main.m */; };
-		8623BFAB1B9B8E7B00859EE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFAA1B9B8E7B00859EE6 /* AppDelegate.m */; };
-		8623BFAE1B9B8E7B00859EE6 /* MyFriends.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8623BFAC1B9B8E7B00859EE6 /* MyFriends.xcdatamodeld */; };
 		8623BFB41B9B8E7B00859EE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8623BFB21B9B8E7B00859EE6 /* Main.storyboard */; };
 		8623BFB61B9B8E7B00859EE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8623BFB51B9B8E7B00859EE6 /* Images.xcassets */; };
 		8623BFB91B9B8E7B00859EE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8623BFB71B9B8E7B00859EE6 /* LaunchScreen.xib */; };
@@ -18,6 +16,10 @@
 		86E50CF11B9BA0750064B38D /* MFAFriendsAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CF01B9BA0750064B38D /* MFAFriendsAddViewController.m */; };
 		86E50CFA1B9BA9C50064B38D /* MFAFriendsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50CF91B9BA9C50064B38D /* MFAFriendsDetailViewController.m */; };
 		86E50D081B9CB0030064B38D /* MFAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50D071B9CB0030064B38D /* MFAConstants.m */; };
+		86E50D0D1B9CBE5F0064B38D /* MyFriends.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86E50D0B1B9CBE5F0064B38D /* MyFriends.xcdatamodeld */; };
+		86E50D101B9CBE900064B38D /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50D0F1B9CBE900064B38D /* Friend.m */; };
+		86E50D141B9CBF0B0064B38D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50D131B9CBF0B0064B38D /* AppDelegate.m */; };
+		86E50D181B9CCB970064B38D /* MFAFriendsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50D171B9CCB970064B38D /* MFAFriendsListTableViewCell.m */; };
 		9CD2994B04350A1BFCE3CE24 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9745E293C05E67DBB3FA392D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +38,6 @@
 		8623BFA21B9B8E7B00859EE6 /* MyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8623BFA61B9B8E7B00859EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8623BFA71B9B8E7B00859EE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8623BFA91B9B8E7B00859EE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8623BFAA1B9B8E7B00859EE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8623BFAD1B9B8E7B00859EE6 /* MyFriends.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFriends.xcdatamodel; sourceTree = "<group>"; };
 		8623BFB31B9B8E7B00859EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8623BFB51B9B8E7B00859EE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8623BFB81B9B8E7B00859EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -53,6 +52,13 @@
 		86E50CF91B9BA9C50064B38D /* MFAFriendsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsDetailViewController.m; sourceTree = "<group>"; };
 		86E50D061B9CB0030064B38D /* MFAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAConstants.h; sourceTree = "<group>"; };
 		86E50D071B9CB0030064B38D /* MFAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAConstants.m; sourceTree = "<group>"; };
+		86E50D0C1B9CBE5F0064B38D /* MyFriends.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFriends.xcdatamodel; sourceTree = "<group>"; };
+		86E50D0E1B9CBE900064B38D /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		86E50D0F1B9CBE900064B38D /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		86E50D121B9CBF0B0064B38D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86E50D131B9CBF0B0064B38D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86E50D161B9CCB970064B38D /* MFAFriendsListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAFriendsListTableViewCell.h; sourceTree = "<group>"; };
+		86E50D171B9CCB970064B38D /* MFAFriendsListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsListTableViewCell.m; sourceTree = "<group>"; };
 		9745E293C05E67DBB3FA392D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0DE30175910C894A1E219D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,14 +122,14 @@
 		8623BFA41B9B8E7B00859EE6 /* MyFriends */ = {
 			isa = PBXGroup;
 			children = (
+				86E50D151B9CCB5F0064B38D /* View */,
+				86E50D111B9CBF0B0064B38D /* AppDelegate */,
+				86E50D0A1B9CBE5F0064B38D /* Model */,
 				86E50D011B9CAE5A0064B38D /* Constants */,
 				86E50CE51B9B9F070064B38D /* ViewController */,
-				8623BFA91B9B8E7B00859EE6 /* AppDelegate.h */,
-				8623BFAA1B9B8E7B00859EE6 /* AppDelegate.m */,
 				8623BFB21B9B8E7B00859EE6 /* Main.storyboard */,
 				8623BFB51B9B8E7B00859EE6 /* Images.xcassets */,
 				8623BFB71B9B8E7B00859EE6 /* LaunchScreen.xib */,
-				8623BFAC1B9B8E7B00859EE6 /* MyFriends.xcdatamodeld */,
 				8623BFA51B9B8E7B00859EE6 /* Supporting Files */,
 			);
 			path = MyFriends;
@@ -175,6 +181,34 @@
 				86E50D071B9CB0030064B38D /* MFAConstants.m */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		86E50D0A1B9CBE5F0064B38D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86E50D0B1B9CBE5F0064B38D /* MyFriends.xcdatamodeld */,
+				86E50D0E1B9CBE900064B38D /* Friend.h */,
+				86E50D0F1B9CBE900064B38D /* Friend.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86E50D111B9CBF0B0064B38D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				86E50D121B9CBF0B0064B38D /* AppDelegate.h */,
+				86E50D131B9CBF0B0064B38D /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		86E50D151B9CCB5F0064B38D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86E50D161B9CCB970064B38D /* MFAFriendsListTableViewCell.h */,
+				86E50D171B9CCB970064B38D /* MFAFriendsListTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,11 +347,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				86E50CFA1B9BA9C50064B38D /* MFAFriendsDetailViewController.m in Sources */,
-				8623BFAB1B9B8E7B00859EE6 /* AppDelegate.m in Sources */,
+				86E50D181B9CCB970064B38D /* MFAFriendsListTableViewCell.m in Sources */,
+				86E50D0D1B9CBE5F0064B38D /* MyFriends.xcdatamodeld in Sources */,
+				86E50D101B9CBE900064B38D /* Friend.m in Sources */,
 				8623BFA81B9B8E7B00859EE6 /* main.m in Sources */,
+				86E50D141B9CBF0B0064B38D /* AppDelegate.m in Sources */,
 				86E50CF11B9BA0750064B38D /* MFAFriendsAddViewController.m in Sources */,
 				86E50D081B9CB0030064B38D /* MFAConstants.m in Sources */,
-				8623BFAE1B9B8E7B00859EE6 /* MyFriends.xcdatamodeld in Sources */,
 				86E50CEE1B9BA0600064B38D /* MFAFriendsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,12 +565,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8623BFAC1B9B8E7B00859EE6 /* MyFriends.xcdatamodeld */ = {
+		86E50D0B1B9CBE5F0064B38D /* MyFriends.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8623BFAD1B9B8E7B00859EE6 /* MyFriends.xcdatamodel */,
+				86E50D0C1B9CBE5F0064B38D /* MyFriends.xcdatamodel */,
 			);
-			currentVersion = 8623BFAD1B9B8E7B00859EE6 /* MyFriends.xcdatamodel */;
+			currentVersion = 86E50D0C1B9CBE5F0064B38D /* MyFriends.xcdatamodel */;
 			path = MyFriends.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="9FS-mm-VUH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -35,6 +36,41 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XqW-X8-vhu">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MFAFriendsListTableViewCell" id="Y6Y-hc-OpN" customClass="MFAFriendsListTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y6Y-hc-OpN" id="uHg-Qw-L27">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1cj-Cr-oRA">
+                                                    <rect key="frame" x="8" y="4" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="1cj-Cr-oRA" secondAttribute="height" multiplier="1:1" id="L6W-JX-Tuz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVP-ab-uY4">
+                                                    <rect key="frame" x="63" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1cj-Cr-oRA" firstAttribute="top" secondItem="uHg-Qw-L27" secondAttribute="top" constant="4" id="3kK-VC-YYT"/>
+                                                <constraint firstAttribute="centerY" secondItem="NVP-ab-uY4" secondAttribute="centerY" id="AeA-ug-dFa"/>
+                                                <constraint firstItem="NVP-ab-uY4" firstAttribute="leading" secondItem="1cj-Cr-oRA" secondAttribute="trailing" constant="20" id="Hr0-cN-fc9"/>
+                                                <constraint firstItem="1cj-Cr-oRA" firstAttribute="leading" secondItem="uHg-Qw-L27" secondAttribute="leading" constant="8" id="ILP-Pc-jNW"/>
+                                                <constraint firstAttribute="bottom" secondItem="1cj-Cr-oRA" secondAttribute="bottom" constant="4" id="ZtV-VD-tgz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="constraintAvatarImageSideOffset" destination="ZtV-VD-tgz" id="kdb-1a-z8N"/>
+                                            <outlet property="imageAvatar" destination="1cj-Cr-oRA" id="jNo-03-nOW"/>
+                                            <outlet property="labelName" destination="NVP-ab-uY4" id="fU4-Mf-TCb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="eYv-ZE-uYq"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="y72-ye-Ebt"/>
@@ -50,7 +86,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sIQ-O4-PZI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rre-aS-hED"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rre-aS-hED">
+                            <connections>
+                                <action selector="actionToAddFriends:" destination="vXZ-lx-hvc" id="s8z-9W-xSJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableFriends" destination="XqW-X8-vhu" id="6u9-xk-MIo"/>
