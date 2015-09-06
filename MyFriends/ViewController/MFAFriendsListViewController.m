@@ -7,7 +7,9 @@
 //
 
 #import "MFAFriendsListViewController.h"
+#import "MFAConstants.h"
 #import <Parse/Parse.h>
+#import <AFNetworking/AFNetworking.h>
 
 @interface MFAFriendsListViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -23,9 +25,16 @@
 {
     [super viewDidLoad];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager.requestSerializer setValue:MFAParseApplicationId forHTTPHeaderField:@"X-Parse-Application-Id"];
+    [manager.requestSerializer setValue:MFAParseRESTAPIKey forHTTPHeaderField:@"X-Parse-REST-API-Key"];
+    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    
+    [manager GET:@"https://api.parse.com/1/classes/TestObject" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 #pragma mark - TableView delegates
