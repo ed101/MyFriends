@@ -65,7 +65,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="constraintAvatarImageSideOffset" destination="ZtV-VD-tgz" id="kdb-1a-z8N"/>
                                             <outlet property="imageAvatar" destination="1cj-Cr-oRA" id="jNo-03-nOW"/>
                                             <outlet property="labelName" destination="NVP-ab-uY4" id="fU4-Mf-TCb"/>
                                         </connections>
