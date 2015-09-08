@@ -21,6 +21,7 @@
 		86E50D141B9CBF0B0064B38D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50D131B9CBF0B0064B38D /* AppDelegate.m */; };
 		86E50D181B9CCB970064B38D /* MFAFriendsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E50D171B9CCB970064B38D /* MFAFriendsListTableViewCell.m */; };
 		9CD2994B04350A1BFCE3CE24 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9745E293C05E67DBB3FA392D /* libPods.a */; };
+		F54A121B1B9EBA4600315470 /* Friend+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F54A121A1B9EBA4600315470 /* Friend+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		86E50D171B9CCB970064B38D /* MFAFriendsListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAFriendsListTableViewCell.m; sourceTree = "<group>"; };
 		9745E293C05E67DBB3FA392D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0DE30175910C894A1E219D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F54A12191B9EBA4600315470 /* Friend+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Friend+Extensions.h"; sourceTree = "<group>"; };
+		F54A121A1B9EBA4600315470 /* Friend+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Friend+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				86E50D0B1B9CBE5F0064B38D /* MyFriends.xcdatamodeld */,
 				86E50D0E1B9CBE900064B38D /* Friend.h */,
 				86E50D0F1B9CBE900064B38D /* Friend.m */,
+				F54A12191B9EBA4600315470 /* Friend+Extensions.h */,
+				F54A121A1B9EBA4600315470 /* Friend+Extensions.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				86E50CFA1B9BA9C50064B38D /* MFAFriendsDetailViewController.m in Sources */,
 				86E50D181B9CCB970064B38D /* MFAFriendsListTableViewCell.m in Sources */,
 				86E50D0D1B9CBE5F0064B38D /* MyFriends.xcdatamodeld in Sources */,
+				F54A121B1B9EBA4600315470 /* Friend+Extensions.m in Sources */,
 				86E50D101B9CBE900064B38D /* Friend.m in Sources */,
 				8623BFA81B9B8E7B00859EE6 /* main.m in Sources */,
 				86E50D141B9CBF0B0064B38D /* AppDelegate.m in Sources */,

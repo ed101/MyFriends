@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class Friend;
+
 static NSString * const kMFAFriendsListTableViewCell = @"MFAFriendsListTableViewCell";
 static CGFloat const kMFAFriendsListTableViewCellHeight = 90.0;
 
 @interface MFAFriendsListTableViewCell : UITableViewCell
 
-- (void)configureCellWithDictionary:(NSDictionary *)dictionary;
+- (void)configureCellWithFriend:(Friend *)friend;
 
 @end

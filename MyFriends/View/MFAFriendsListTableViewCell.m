@@ -8,6 +8,7 @@
 
 #import "MFAFriendsListTableViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "Friend+Extensions.h"
 
 @interface MFAFriendsListTableViewCell ()
 
@@ -24,14 +25,14 @@
     self.imageAvatar.image = nil;
 }
 
-- (void)configureCellWithDictionary:(NSDictionary *)dictionary;
+- (void)configureCellWithFriend:(Friend *)friend;
 {
     self.imageAvatar.layer.masksToBounds = YES;
     
-    NSString *lastName = dictionary[@"lastName"];
-    NSString *firstName = dictionary[@"firstName"];
+    NSString *lastName = friend.lastName;
+    NSString *firstName = friend.firstName;
     self.labelName.text = [NSString stringWithFormat:@"%@ %@",firstName, lastName];
-    NSString *avatar = dictionary[@"avatar"];
+    NSString *avatar = friend.avatar;
     
     [self.imageAvatar sd_setImageWithURL:[NSURL URLWithString:avatar] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         self.imageAvatar.layer.cornerRadius = self.imageAvatar.layer.frame.size.width / 2;

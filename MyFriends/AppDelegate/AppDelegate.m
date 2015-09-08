@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MFAConstants.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [MagicalRecord setupCoreDataStack];
     
     return YES;
 }
