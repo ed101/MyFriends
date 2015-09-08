@@ -8,7 +8,6 @@
 
 #import "MFAFriendsListViewController.h"
 #import "MFAConstants.h"
-#import <Parse/Parse.h>
 #import <AFNetworking/AFNetworking.h>
 #import "MFAFriendsListTableViewCell.h"
 
