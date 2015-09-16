@@ -7,9 +7,12 @@
 //
 
 #import "MFAFriendsListViewController.h"
+#import "MFAFriendsListTableViewCell.h"
+#import "MFAFriendsDetailViewController.h"
+
 #import <AFNetworking/AFNetworking.h>
 #import <MagicalRecord/MagicalRecord.h>
-#import "MFAFriendsListTableViewCell.h"
+
 #import "Friend+Extensions.h"
 #import "MFAConstants.h"
 
@@ -18,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableFriends;
 @property (nonatomic, strong) NSArray *arrayOfFriends;
 @property (nonatomic, strong) NSFetchedResultsController *frcFriends;
+@property (nonatomic, strong) Friend *friend;
 
 - (IBAction)actionToAddFriends:(id)sender;
 
@@ -95,6 +99,13 @@
     return kMFAFriendsListTableViewCellHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    self.friend = self.frcFriends.fetchedObjects[indexPath.row];
+    
+    [self performSegueWithIdentifier:toFriendsDetailVC sender:self];
+}
+
 #pragma mark - Fetch Result Controller
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
@@ -139,4 +150,16 @@
 - (IBAction)actionToAddFriends:(id)sender {
     [self performSegueWithIdentifier:toFriendsAddVC sender:self];
 }
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:toFriendsDetailVC]){
+        MFAFriendsDetailViewController *vc = (MFAFriendsDetailViewController *)segue.destinationViewController;
+        vc.friend = self.friend;
+    }
+}
+
+#pragma mark -
+
 @end
